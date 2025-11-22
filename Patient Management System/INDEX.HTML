@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATIENT MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="all">
+
+        <!-- PAGE 1: DASHBOARD -->
+        <div id="dashboardPage">
+
+            <header class="title">
+                <h1>PATIENT MANAGEMENT SYSTEM</h1>
+                <p class="sub">Integrated with FDA Drug Information Database</p>
+            </header>
+
+            <!-- STATS -->
+            <section class="stats">
+                <div class="grid">
+                    <div class="num">Total Patients</div>
+                    <div class="Adherence">Avg Adherence</div>
+                    <div class="doses">Missed Doses</div>
+                    <div class="attention">Need Attention</div>
+                </div>
+            </section>
+
+            <!-- SEARCH -->
+            <section class="search">
+                <div class="search-box">
+                    <input class="search-input" type="text" placeholder="Search by patient name, ID, or condition...">
+                    <button class="search-btn">SEARCH</button>
+                    <button class="clear-btn">CLEAR</button>
+                </div>
+
+                <div class="filters">
+                    <div class="group">
+                        <label>Filter by Condition:</label>
+                        <select class="condition-filter">
+                            <option>All Conditions</option>
+                            <option>Diabetes</option>
+                            <option>Hypertension</option>
+                            <option>Asthma</option>
+                            <option>Cardiovascular</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <label>Filter by Adherence Level:</label>
+                        <select class="adherence-filter">
+                            <option>All Levels</option>
+                            <option>High (80-100%)</option>
+                            <option>Medium (50-79%)</option>
+                            <option>Low (0-49%)</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BUTTONS -->
+            <div class="action-bttn">
+                <button class="primary" id="openAddPage">Add a new Patient</button>
+                <button class="secondary" id="openAllPatientsPage">All Patients</button>
+            </div>
+
+            <!-- HEALTH NEWS SECTION -->
+            <section class="news-section-container">
+                <h2 class="news-heading">Latest Health News</h2>
+                <div class="news-section"></div>
+            </section>
+
+        </div> <!-- end dashboard -->
+
+
+        <!-- PAGE 2: ADD PATIENT PAGE -->
+        <div id="addPatientPage" style="display:none;" class="add">
+            <button class="secondary" id="backToDashboard1">← Back</button>
+            <h2>Add New Patient</h2>
+
+            <form id="addPatientForm">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" required>
+
+                <label for="patientID">Patient ID:</label>
+                <input type="text" id="patientID" required>
+
+                <label for="condition">Condition:</label>
+                <select id="condition" required>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="hypertension">Hypertension</option>
+                    <option value="asthma">Asthma</option>
+                    <option value="cardiovascular">Cardiovascular</option>
+                </select>
+
+                <label for="adherence">Adherence Level (%):</label>
+                <input type="number" id="adherence" min="0" max="100" required>
+
+                <button type="submit" class="submit-btn">Add Patient</button>
+            </form>
+        </div>
+
+
+        <!-- PAGE 3: ALL PATIENTS PAGE -->
+        <div id="allPatientsPage" style="display:none;">
+            <button class="secondary" id="backToDashboard2">← Back</button>
+            <h2>All Patients</h2>
+            <div class="patient-list"></div>
+        </div>
+
+    </section>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

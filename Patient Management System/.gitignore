@@ -1,0 +1,72 @@
+# API Keys and Sensitive Information
+# IMPORTANT: Never commit API keys to public repositories
+*.env
+.env
+.env.local
+.env.development
+.env.production
+config.js
+secrets.js
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Log Files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency Directories
+node_modules/
+bower_components/
+jspm_packages/
+
+# Build and Distribution Files
+dist/
+build/
+*.min.js
+*.min.css
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache
+
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Package Manager Lock Files (optional - depends on team preference)
+# package-lock.json
+# yarn.lock
+
+# Backup Files
+*.backup
+*~
+
+# Server Configuration (if you have custom configs)
+.htaccess
+nginx.conf
+apache.conf

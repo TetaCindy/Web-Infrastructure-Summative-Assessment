@@ -1,0 +1,411 @@
+body{
+    background-image: url('download\ \(2\).jpg');
+    background-size: fill;
+    font-family: Arial, sans-serif;
+}
+
+.all{
+    max-width: 1200px;
+    min-height: 600px;
+    max-height: 90vh;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 100px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* TITLE STYLING */
+.title h1{
+    color: #3B82F6;
+    text-align: center;
+    padding: 0px 0px;
+    margin-top: 0px;
+}
+
+.sub{
+    text-align: center;
+    font-size: 15px;
+}
+
+/* FLEX AND SEARCH BAR STYLING */
+.grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.search{
+    text-align: center;
+    margin-top: 30px;
+}
+
+input[type="text"]{
+    width: 500px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-btn{
+    font-size: 10px;
+    padding: 12px;
+    width: 100px;
+    background-color: #3B82F6;
+    font-weight: bold;
+    border-color: #3B82F6;
+}
+
+.search-btn:hover{
+    background-color: white;
+    color: #3B82F6;
+    cursor: pointer;
+    border-color: white;
+}
+
+.clear-btn{
+    font-size: 10px;
+    padding: 12px;
+    width: 100px;
+    background-color: #3B82F6;
+    font-weight: bold;
+    border-color: #3B82F6;
+}
+
+.clear-btn:hover{
+    background-color: white;
+    color: #3B82F6;
+    cursor: pointer;
+    border-color: white;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 200px 20px 200px;
+    align-items: center;
+}
+
+/* ACTION BUTTONS STYLING */
+.action-bttn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.action-bttn .primary,
+.action-bttn .secondary{
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #3B82F6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-bttn .primary{
+    background-color: #3B82F6;
+    color: white;
+}
+
+.action-bttn .primary:hover{
+    background-color: #2563EB;
+    border-color: #2563EB;
+}
+
+.action-bttn .secondary{
+    background-color: white;
+    color: #3B82F6;
+}
+
+.action-bttn .secondary:hover{
+    background-color: #3B82F6;
+    color: white;
+}
+
+/* ADD PATIENT PAGE STYLING */
+.add{
+    padding: 20px;
+}
+
+.add h2{
+    color: #1F2937;
+    margin: 20px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.add .secondary{
+    padding: 10px 20px;
+    background-color: white;
+    color: #3B82F6;
+    border: 2px solid #3B82F6;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add .secondary:hover{
+    background-color: #3B82F6;
+    color: white;
+}
+
+#addPatientForm{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #F9FAFB;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#addPatientForm label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #374151;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#addPatientForm input[type="text"],
+#addPatientForm input[type="number"],
+#addPatientForm select{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #D1D5DB;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+#addPatientForm input[type="text"]:focus,
+#addPatientForm input[type="number"]:focus,
+#addPatientForm select:focus{
+    outline: none;
+    border-color: #3B82F6;
+}
+
+.submit-btn{
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover{
+    background-color: #2563EB;
+}
+
+/* ALL PATIENTS PAGE STYLING */
+#allPatientsPage{
+    padding: 20px;
+}
+
+#allPatientsPage h2{
+    color: #1F2937;
+    margin: 20px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+#allPatientsPage .secondary{
+    padding: 10px 20px;
+    background-color: white;
+    color: #3B82F6;
+    border: 2px solid #3B82F6;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#allPatientsPage .secondary:hover{
+    background-color: #3B82F6;
+    color: white;
+}
+
+.patient-list{
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+}
+
+.patient-card{
+    background-color: #F9FAFB;
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.patient-card:hover{
+    border-color: #3B82F6;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+}
+
+.patient-card h3{
+    color: #1F2937;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.patient-card p{
+    color: #6B7280;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.patient-card .patient-id{
+    color: #3B82F6;
+    font-weight: 600;
+}
+
+.patient-card .condition{
+    display: inline-block;
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.patient-card .adherence-level{
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.patient-card .adherence-high{
+    color: #059669;
+}
+
+.patient-card .adherence-medium{
+    color: #D97706;
+}
+
+.patient-card .adherence-low{
+    color: #DC2626;
+}
+
+/* HEALTH NEWS SECTION STYLING */
+.news-section-container{
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+.news-heading{
+    color: #1F2937;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.news-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.news-card{
+    background-color: white;
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card:hover{
+    border-color: #3B82F6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+    transform: translateY(-2px);
+}
+
+.news-image{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #F3F4F6;
+}
+
+.news-content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.news-title{
+    color: #1F2937;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-description{
+    color: #6B7280;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.news-source{
+    color: #9CA3AF;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.news-link{
+    color: #3B82F6;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news-link:hover{
+    color: #2563EB;
+    text-decoration: underline;}
