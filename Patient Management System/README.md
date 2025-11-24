@@ -196,8 +196,41 @@ For issues or questions:
 
 ## Deployment
 
-[Deployment instructions will be added here once the application is deployed to web servers]
+Deployment
 
----
+The application has been successfully deployed to the ALU web server.
 
-**Note**: This is an educational project demonstrating API integration and patient data management. It is not intended for actual clinical use.
+Steps Performed During Deployment
+
+Uploaded Project Files to the Server
+All project files (index.html, style.css, script.js, config.js, assets, etc.) were transferred to the server directory used for hosting web projects.
+
+Updated Configuration
+
+Ensured that config.js contains the correct NewsData.io API key on the server.
+
+Confirmed that the config.js file is not publicly tracked in Git.
+
+Set Up Directory Permissions
+The deployment folder was assigned the correct read permissions for the web server to access HTML, CSS, and JS files.
+
+Configured the Web Server
+The project was placed inside the server’s web root (e.g., /var/www/html/ or /usr/share/nginx/html/, depending on the server setup).
+No additional backend configuration was required since this is a fully front-end application.
+
+Tested Application in Production
+
+Verified API requests from the server environment
+
+Ensured all pages load correctly
+
+Confirmed that health news and FDA treatment data load as expected
+
+Live Access
+
+Your deployed application is now accessible through your assigned ALU server URL:
+
+👉 http://<your-server-ip-or-domain>/
+(Replace with your actual server address.)
+
+Link to the web app: 	http://3.87.225.168/
