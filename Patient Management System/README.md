@@ -234,3 +234,5 @@ Your deployed application is now accessible through your assigned ALU server URL
 (Replace with your actual server address.)
 
 Link to the web app: 	http://3.87.225.168/
+Link to the DEMO video: https://youtu.be/v52H5ryLmLM
+
